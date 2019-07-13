@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<head>
+
+    <link href='..\css\post.css' rel='stylesheet' type='text/css'>
+    <link href='..\css\header.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <!-- Insert code for Sign Up, Sign In button here. 
+               Add code for "ScriBBler" heading and the sub-heading -->
+        <input id="sign-Up" class="topButtons" type="button" value="Sign Up">
+        <input id="sign-In" class="topButtons" type="button" value="Sign In">
+        <a id="pageTitle" class="logo-title">ScriBBler</a>
+        <p class="middleText">Explore. Imagine. Create</p>
+    </div>
+    <div>
+
+        <!-- Insert code for Sign In modal here -->
+        <div class="modal" id="id01">
+            <div class="modal-content">
+                <span id="close1" class="close">&times;</span>
+                <h2>
+                    <center>Welcome Back!</center>
+                </h2>
+                <hr />
+                <form>
+                    <h4>Username</h4>
+                    <input class="pro" type="text" name="fname" placeholder="Enter Username" required>
+                    <h4>Password</h4>
+                    <input class="pro" type="password" name="pass" placeholder="Enter Password" required>
+                    <button>Sign In</button>
+                    <div>
+                        <center>
+                            <h4>Not a member?<span style="color:slateblue; cursor: pointer;" onclick="newUser()">Sign
+                                                    Up</span></h4>
+                        </center>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+        <!-- Insert code for Sign Up modal here -->
+
+        <div id="id02" class="modal">
+
+
+            <div class="modal-content">
+                <span id="close2" class="close">&times;</span>
+                <h2>
+                    <center>Get Started</center>
+                </h2>
+                <hr />
+                <form>
+                    <h4>Full Name</h4>
+                    <input class="pro" type="text" name="fname" placeholder="Enter Full Name" required>
+                    <h4>Username</h4>
+                    <input class="pro" type="text" name="fname" placeholder="Enter Username" required>
+                    <h4>Password</h4>
+                    <input class="pro" type="password" name="pass" placeholder="Enter Password" required>
+                    <h4>Confirm Password</h4>
+                    <input class="pro" type="password" name="confPass" placeholder="Confirm Password" required>
+                    <button>Sign Up</button>
+                </form>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div id="main">
+        <div class="blogContent">
+            <div id="blogTitle" class="blogTite">
+                <h3 id="blogTitleNew" contenteditable="false">The legacy of Jimi Hendrix</h3>
+            </div>
+
+
+
+            <div class="blogAuthor">
+
+                <!-- Code for Edit/Save button and  -->
+                <button onclick="editContent()" id="edit" class="edit-save">Edit</button>
+                <button onclick="saveContent()" id="save" class="edit-save">Save</button>
+                <!-- Blog Post Author name -->
+                <p>Jimi</p>
+            </div>
+            <!-- Main Content of the blog startes here -->
+            <div class="blogText">
+                <p id="blogBody">
+                    Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative
+                    application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American
+                    folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped
+                    to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this
+                    technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand
+                    would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one
+                    guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as
+                    an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb
+                    42] Aledort wrote: "In rock guitar, there are but two eras � before Hendrix and after Hendrix."
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Code for Like button, Comment button, Comment box here-->
+        <button onclick="like()" id="like">Like</button>
+        <p id="liker">Be the first one to like this!</p>
+        <!-- Number of likes -->
+        <!-- Comment section starts here -->
+        <textarea id="addComment" rows="6" placeholder="Leave a comment..."></textarea>
+        <button onclick="comment()" id="commentBtn">Comment</button>
+        <!-- Comment upload button -->
+        <!-- Comment holder Division starts here -->
+        <div id="newCommentHolder"></div>
+
+    </div>
+    <!-- Adding the JS files -->
+    <script src="..\js\post.js" defer></script>
+    <script src="..\js\header.js">
+    </script>
+
+</body>

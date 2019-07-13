@@ -1,0 +1,111 @@
+body {
+    background: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 !important;
+    background-size: 100% cover!important;
+    overflow: hidden;
+    display: block;
+}
+
+
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'lato';
+}
+
+
+/*  for input fields model    */
+
+.pro {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+    display: block;
+    width: 98%;
+    height: 44px;
+}
+
+
+/* Styles for sign in and sign up modals */
+
+.postButtons {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -150px;
+}
+
+button.mainButtons {
+    width: 100px;
+    background: initial;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 90%;
+    font-weight: 500;
+    background: yellow;
+    color: #000;
+    opacity: 1;
+    margin: 10px 10px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Style for */
+
+a button.mainButtons {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+
+/* Style The Modal Content */
+
+.modal-content {
+    position: relative;
+    top: -34px;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+
+/* The Close button on the modal*/
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Style for the content field in the createPostModal */
+
+#createPost {
+    width: 98%;
+    background-color: #f1f1f1;
+    height: auto;
+    border: none;
+    outline: none;
+    padding: 10px;
+    display: block;
+    resize: none;
+}

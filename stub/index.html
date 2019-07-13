@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blogging Website</title>
+
+    <!-- Place all CSS for header in this file -->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+
+    <!-- Place all CSS for the rest of the elements in this file -->
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+
+    <!-- Place all CSS for fonts in this file -->
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <div id="main-container-div">
+
+        <div class="header">
+
+            <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+            <input id="sign-Up" class="topButtons" type="button" value="Sign Up">
+            <input id="sign-In" class="topButtons" type="button" value="Sign In">
+            <a id="pageTitle" class="logo-title">ScriBBler</a>
+            <p class="middleText">Explore. Imagine. Create</p>
+        </div>
+
+        <div class="postButtons">
+
+            <!-- Insert code for All Posts & Create Post button here -->
+            <a href="html/bloglist.html"><button class="mainButtons">All Posts</button></a>
+            <button id="createPostBtn" class="mainButtons">Create Post</button>
+        </div>
+    </div>
+
+    <div>
+
+        <!-- Insert code for Sign In modal here -->
+        <div class="modal" id="id01">
+            <div class="modal-content">
+                <span id="close1" class="close">&times;</span>
+                <h2>
+                    <center>Welcome Back!</center>
+                </h2>
+                <hr />
+                <form>
+                    <h4>Username</h4>
+                    <input class="pro" type="text" name="fname" placeholder="Enter Username" required>
+                    <h4>Password</h4>
+                    <input class="pro" type="password" name="pass" placeholder="Enter Password" required>
+                    <button>Sign In</button>
+                    <div>
+                        <center>
+                            <h4>Not a member?<span style="color:slateblue; cursor: pointer;" onclick="newUser()">Sign
+                                            Up</span></h4>
+                        </center>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div>
+
+            <!-- Insert code for Sign Up modal here -->
+
+            <div id="id02" class="modal">
+
+
+                <div class="modal-content">
+                    <span id="close2" class="close">&times;</span>
+                    <h2>
+                        <center>Get Started</center>
+                    </h2>
+                    <hr />
+                    <form>
+                        <h4>Full Name</h4>
+                        <input class="pro" type="text" name="fname" placeholder="Enter Full Name" required>
+                        <h4>Username</h4>
+                        <input class="pro" type="text" name="fname" placeholder="Enter Username" required>
+                        <h4>Password</h4>
+                        <input class="pro" type="password" name="pass" placeholder="Enter Password" required>
+                        <h4>Confirm Password</h4>
+                        <input class="pro" type="password" name="confPass" placeholder="Confirm Password" required>
+                        <button>Sign Up</button>
+                    </form>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div>
+
+            <!-- Insert code for Create Post modal here -->
+            <div id="createPostModal" class="modal">
+                <div class="modal-content">
+                    <span id="closePost" class="close">&times;</span>
+                    <p>Title:</p>
+                    <input class="pro" id="title" type="text" placeholder="What's on your mind?" required>
+                    <p>Content:</p>
+                    <textarea rows="20" id="createPost" placeholder="Write something here..."></textarea>
+                    <button>Publish</button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <!-- Place all Javascript for header in this file -->
+        <script src="js\header.js"></script>
+        <!-- Place all Javascript for rest of the elements in this file -->
+        <script src="js\index.js"></script>
+
+</body>
+
+</html>
